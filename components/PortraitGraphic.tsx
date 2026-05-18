@@ -26,7 +26,7 @@ export function PortraitGraphic() {
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
           <Image
-            src="https://raw.githubusercontent.com/arnaldorocha/portfolio/refs/heads/main/assets/img/perfil.png"
+            src="https://raw.githubusercontent.com/arnaldorocha/portfolio/refs/heads/main/assets/img/IMG_20260425_003039_467.webp"
             alt="Arnaldo Rocha Filho"
             width={900}
             height={1200}
