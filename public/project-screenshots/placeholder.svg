@@ -1,0 +1,15 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111821" />
+      <stop offset="1" stop-color="#1f2937" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="40" fill="url(#g)" />
+  <rect x="80" y="80" width="1440" height="840" rx="32" fill="#0b1120" stroke="#ffffff" stroke-opacity="0.08" stroke-width="3" />
+  <path d="M200 260C320 220 520 180 740 220C980 270 1160 340 1360 260" stroke="#8fb0ff" stroke-opacity="0.65" stroke-width="8" stroke-linecap="round" />
+  <path d="M240 420H1360" stroke="#8fb0ff" stroke-opacity="0.15" stroke-width="8" />
+  <path d="M240 520H1360" stroke="#8fb0ff" stroke-opacity="0.1" stroke-width="8" />
+  <path d="M240 620H1360" stroke="#8fb0ff" stroke-opacity="0.08" stroke-width="8" />
+  <text x="240" y="750" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="48" font-weight="600">Architecture + Operations Preview</text>
+</svg>
