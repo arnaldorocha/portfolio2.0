@@ -16,7 +16,7 @@ export type ProjectData = {
   roadmap: string[];
   links: {
     github: string;
-    deploy: string;
+    demo: string;
   };
   hero: {
     summary: string;
