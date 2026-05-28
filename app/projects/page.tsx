@@ -10,9 +10,9 @@ export default function ProjectsPage() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 space-y-4">
           <p className="text-xs uppercase tracking-[0.28em] text-slate-500">Projects</p>
-          <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">Five engineered platforms with architecture, automation, and AI systems at the core.</h1>
+          <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">Practical backend, automation, and AI projects.</h1>
           <p className="max-w-3xl text-lg leading-8 text-slate-300">
-            Each case study is built around a production-ready solution, including system architecture, stack decisions, media galleries, and operational goals.
+            Each case study shows the technical choices, workflows, and backend work behind software tools and integrations.
           </p>
         </div>
         <div className="grid gap-8">
@@ -29,7 +29,23 @@ export default function ProjectsPage() {
                 <div className="max-w-2xl">
                   <p className="text-xs uppercase tracking-[0.28em] text-slate-500">{project.title}</p>
                   <h2 className="mt-3 text-3xl font-semibold text-white">{project.subtitle}</h2>
-                  <p className="mt-5 text-slate-300 leading-7">{project.overview}</p>
+                  <p className="mt-5 text-slate-300 leading-7">{project.problem}</p>
+
+                  <div className="mt-4">
+                    <p className="text-sm font-medium text-slate-400">How</p>
+                    <ul className="mt-2 list-inside list-disc text-slate-300">
+                      {project.decisions.slice(0, 3).map((d) => (
+                        <li key={d}>{d}</li>
+                      ))}
+                    </ul>
+
+                    <p className="mt-3 text-sm font-medium text-slate-400">Tech</p>
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {project.stack.map((s) => (
+                        <span key={s} className="rounded-full border border-white/10 bg-surface px-3 py-1 text-xs text-slate-300">{s}</span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
                 <Link
                   href={`/projects/${project.slug}`}

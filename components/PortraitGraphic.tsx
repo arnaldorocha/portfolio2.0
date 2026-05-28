@@ -49,7 +49,7 @@ export function PortraitGraphic() {
           </p>
 
           <h3 className="text-2xl font-semibold tracking-tight text-white">
-            Building intelligent infrastructure and production-ready systems.
+            Building dependable infrastructure and production-ready systems.
           </h3>
 
           <p className="max-w-xl text-[15px] leading-8 text-slate-400">

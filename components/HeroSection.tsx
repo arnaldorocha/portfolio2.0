@@ -6,114 +6,108 @@ import { PortraitGraphic } from '@/components/PortraitGraphic';
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden px-6 pb-20 pt-24 lg:px-8">
-      <div
-        className="absolute inset-0 bg-soft-grid opacity-60"
-        aria-hidden="true"
-      />
+    <section className="relative overflow-hidden px-6 pb-24 pt-32 lg:px-8">
+      {/* Background gradients */}
+      <div className="absolute -right-40 -top-40 h-80 w-80 rounded-full bg-blue-500/20 blur-3xl" />
+      <div className="absolute -left-40 bottom-40 h-80 w-80 rounded-full bg-purple-500/10 blur-3xl" />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
-        {/* LEFT */}
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+        {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, ease: 'easeOut' }}
           className="space-y-8"
         >
-          <p className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.28em] text-slate-400">
-            AI systems • Backend engineering • Automation
-          </p>
+          {/* Tagline */}
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.2em] text-slate-400 backdrop-blur-sm"
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500" />
+            </span>
+            Backend developer • Automation engineer • Applied AI
+          </motion.div>
 
+          {/* Main Headline */}
           <div className="space-y-6">
-            <h1 className="max-w-3xl text-5xl font-semibold tracking-tight text-white sm:text-6xl">
-              Building AI-powered systems, backend applications, and automation workflows.
-            </h1>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl"
+            >
+              Arnaldo Rocha — Backend, Automation, Applied AI
+            </motion.h1>
 
-            <p className="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-              I'm Arnaldo Rocha Filho, a Machine Learning and AI engineering student
-              focused on backend systems, intelligent automation,
-              APIs, and practical software engineering.
-            </p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl"
+            >
+              Founder of nexu.fell. I build backend services, automation pipelines, and model-integrated systems using Python, FastAPI, and PostgreSQL. I ship production-ready automation and SaaS tools for small businesses.
+            </motion.p>
           </div>
 
-          {/* BUTTONS */}
-          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          {/* CTA Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="flex flex-col gap-3 sm:flex-row sm:flex-wrap"
+          >
             <Link
               href="/projects"
-              className="inline-flex min-w-[170px] items-center justify-center rounded-full bg-white/10 px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-white/15"
+              className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 px-7 py-3 text-sm font-semibold text-white shadow-lg transition duration-300 hover:shadow-xl hover:from-blue-600 hover:to-cyan-600"
             >
-              Explore Projects
+              Projects
             </Link>
 
             <Link
-              href="https://github.com/arnaldorocha/"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-white/10 bg-transparent px-6 py-3 text-sm font-semibold text-slate-200 transition duration-200 hover:bg-white/5"
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-7 py-3 text-sm font-semibold text-slate-200 transition duration-300 hover:border-white/40 hover:bg-white/10"
             >
-              View GitHub
+              Contact
             </Link>
+          </motion.div>
 
-            <Link
-              href="https://www.linkedin.com/in/arnaldo-rocha-filho-52ba03163/"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-white/10 bg-transparent px-6 py-3 text-sm font-semibold text-slate-200 transition duration-200 hover:bg-white/5"
-            >
-              LinkedIn
-            </Link>
-          </div>
-
-          {/* INFO GRID */}
-          <div className="grid gap-4 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-glow">
-            <div className="text-sm uppercase tracking-[0.28em] text-slate-500">
-              Current focus
+          {/* Stats/Facts */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="grid gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:grid-cols-3"
+          >
+            <div className="space-y-1">
+              <p className="text-xs uppercase tracking-wider text-slate-500">Brand</p>
+              <p className="text-lg font-semibold text-white">nexu.fell — automation & SaaS</p>
             </div>
 
-            <div className="grid gap-3 sm:grid-cols-3">
-              <div className="space-y-1">
-                <p className="text-sm text-slate-300">
-                  Backend systems
-                </p>
-
-                <p className="text-xl font-semibold text-white">
-                  APIs & automation
-                </p>
-              </div>
-
-              <div className="space-y-1">
-                <p className="text-sm text-slate-300">
-                  AI development
-                </p>
-
-                <p className="text-xl font-semibold text-white">
-                  LLM workflows
-                </p>
-              </div>
-
-              <div className="space-y-1">
-                <p className="text-sm text-slate-300">
-                  Continuous growth
-                </p>
-
-                <p className="text-xl font-semibold text-white">
-                  Real-world projects
-                </p>
-              </div>
+            <div className="space-y-1">
+              <p className="text-xs uppercase tracking-wider text-slate-500">Teaching</p>
+              <p className="text-lg font-semibold text-white">Instructor — Instituto Correggio</p>
             </div>
-          </div>
+
+            <div className="space-y-1">
+              <p className="text-xs uppercase tracking-wider text-slate-500">Production</p>
+              <p className="text-lg font-semibold text-white">SIGA — live at Instituto Correggio</p>
+            </div>
+          </motion.div>
         </motion.div>
 
-        {/* RIGHT */}
+        {/* RIGHT SIDE - Visual Element */}
         <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.9, ease: 'easeOut', delay: 0.1 }}
-          className="relative mx-auto max-w-lg"
+          initial={{ opacity: 0, scale: 0.9, x: 40 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.9, delay: 0.2, ease: 'easeOut' }}
+          className="relative h-full min-h-[500px] lg:min-h-[600px]"
         >
-          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-surface2 p-6 shadow-glow ring-slate-700/50">
-            <PortraitGraphic />
-          </div>
+          <PortraitGraphic />
         </motion.div>
       </div>
     </section>

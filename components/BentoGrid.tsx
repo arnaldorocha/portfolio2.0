@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 const items = [
   {
     title: 'Infrastructure Strategy',
-    description: 'Designing resilient backend systems, service meshes, and secure cloud platforms at scale.',
+    description: 'Designing resilient backend systems, service meshes, and cloud platforms for reliability.',
     tag: 'Systems'
   },
   {
@@ -16,7 +16,7 @@ const items = [
   },
   {
     title: 'AI Operations',
-    description: 'Creating supervised AI systems, agentic workflows, and intelligence layers for enterprise use cases.',
+    description: 'Creating supervised AI systems, workflows, and intelligence layers for practical use cases.',
     tag: 'AI'
   },
   {

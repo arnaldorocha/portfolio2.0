@@ -1,17 +1,23 @@
 import { HeroSection } from '@/components/HeroSection';
-import { BentoGrid } from '@/components/BentoGrid';
-import { ProjectCarousel } from '@/components/ProjectCarousel';
+import { SpecializationsSection } from '@/components/SpecializationsSection';
+import { FeaturedProjects } from '@/components/FeaturedProjects';
+import { ProcessFlow } from '@/components/ProcessFlow';
+import { RoadmapSection } from '@/components/RoadmapSection';
 import { TechStackGrid } from '@/components/TechStackGrid';
-import { TimelineSection } from '@/components/TimelineSection';
+import { CurrentFocus } from '@/components/CurrentFocus';
+import { ContactCTA } from '@/components/ContactCTA';
 
 export default function Home() {
   return (
-    <>
+    <main>
       <HeroSection />
-      <BentoGrid />
-      <ProjectCarousel />
+      <SpecializationsSection />
+      <FeaturedProjects />
+      <ProcessFlow />
+      <RoadmapSection />
       <TechStackGrid />
-      <TimelineSection />
-    </>
+      <CurrentFocus />
+      <ContactCTA />
+    </main>
   );
 }

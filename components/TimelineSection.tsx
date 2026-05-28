@@ -6,8 +6,8 @@ const events = [
   {
     year: '2026',
     title: 'AI systems and workflow orchestration',
-    detail:
-      'Developing AI-powered workflows, automation systems, and backend applications focused on practical engineering and intelligent integrations.'
+      detail:
+      'Developing AI workflows, automation systems, and backend applications focused on practical engineering and reliable integrations.'
   },
   {
     year: '2025',

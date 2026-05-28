@@ -2,47 +2,124 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { navigation } from '@/lib/data';
+
+const quickLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '#contact' }
+];
+
+const socialLinks = [
+  { icon: '→', label: 'GitHub', href: 'https://github.com/arnaldorocha/' },
+  { icon: '→', label: 'LinkedIn', href: 'https://linkedin.com/in/arnaldo-rocha-filho-52ba03163/' },
+  { icon: '→', label: 'Email', href: 'mailto:arnaldorochafilho@gmail.com' }
+];
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-surface2/95 py-12">
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8">
-        <div className="space-y-4">
-          <p className="text-xs uppercase tracking-[0.28em] text-slate-500">Engineering Portfolio</p>
-          <h3 className="text-2xl font-semibold text-white">Designed for systems leaders and modern AI infrastructure teams.</h3>
-          <p className="max-w-xl text-sm leading-7 text-slate-400">
-            A premium portfolio experience built around automation, architecture, and production readiness with polished motion and enterprise-grade content.
-          </p>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2">
-          <div>
-            <p className="mb-4 text-xs uppercase tracking-[0.28em] text-slate-500">Pages</p>
-            <div className="flex flex-col gap-3 text-sm text-slate-300">
-              {navigation.map((item) => (
-                <Link key={item.href} href={item.href} className="hover:text-white">
-                  {item.label}
+    <footer className="relative border-t border-white/5 bg-gradient-to-b from-surface to-surface2">
+      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        {/* Content Grid */}
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Brand Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="sm:col-span-2 lg:col-span-1 space-y-4"
+          >
+            <div className="flex items-center gap-2">
+              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 p-1.5">
+                <div className="h-full w-full rounded bg-surface flex items-center justify-center text-xs font-bold text-blue-400">
+                  AR
+                </div>
+              </div>
+              <span className="font-semibold text-white">Arnaldo Rocha</span>
+            </div>
+            <p className="text-sm leading-relaxed text-slate-400">
+              Backend developer. Automation engineer. Applied AI.
+            </p>
+          </motion.div>
+
+          {/* Quick Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.08 }}
+          >
+            <h4 className="mb-4 text-xs uppercase tracking-wider font-semibold text-slate-300">Navigation</h4>
+            <div className="flex flex-col gap-3">
+              {quickLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm text-slate-400 transition duration-300 hover:text-white"
+                >
+                  {link.label}
                 </Link>
               ))}
             </div>
-          </div>
-          <div>
-            <p className="mb-4 text-xs uppercase tracking-[0.28em] text-slate-500">Contact</p>
-            <div className="space-y-3 text-sm text-slate-300">
-              <p>arnaldorochafilho@gmail.com</p>
-              <p>Open to senior engineering roles, AI infrastructure initiatives, and automation strategy leadership.</p>
+          </motion.div>
+
+          {/* Social Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.16 }}
+          >
+            <h4 className="mb-4 text-xs uppercase tracking-wider font-semibold text-slate-300">Connect</h4>
+            <div className="flex flex-col gap-3">
+              {socialLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 text-sm text-slate-400 transition duration-300 hover:text-white"
+                >
+                  <span className="text-blue-400">{link.icon}</span>
+                  {link.label}
+                </Link>
+              ))}
             </div>
-          </div>
+          </motion.div>
+
+          {/* Contact CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.24 }}
+            className="sm:col-span-2 lg:col-span-1 space-y-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
+          >
+            <h4 className="text-xs uppercase tracking-wider font-semibold text-slate-300">Ready to Build?</h4>
+            <p className="text-sm text-slate-400">
+              Let's discuss your project and create something amazing together.
+            </p>
+            <Link
+              href="mailto:arnaldorochafilho@gmail.com"
+              className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white transition duration-300 hover:shadow-lg"
+            >
+              Get Started
+            </Link>
+          </motion.div>
         </div>
+
+        {/* Bottom Bar */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-slate-500"
+        >
+          <p>© 2026 Arnaldo Rocha Filho. Building practical software systems and automation tools.</p>
+        </motion.div>
       </div>
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
-        className="mt-10 border-t border-white/10 pt-6 text-center text-sm text-slate-500"
-      >
-        © 2026 ARNALDO ROCHA FILHO Portfolio. Crafted for infrastructure, automation, and AI-native systems.
-      </motion.div>
     </footer>
   );
 }

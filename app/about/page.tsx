@@ -15,15 +15,11 @@ export default function AboutPage() {
           </p>
 
           <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            Building AI systems, automation workflows, and backend infrastructure through practical engineering.
+            Arnaldo Rocha — Backend developer, automation engineer, applied AI
           </h1>
 
           <p className="max-w-3xl text-lg leading-8 text-slate-300">
-            I'm Arnaldo Rocha Filho, a Machine Learning and AI engineering student
-            focused on backend systems, automation, and intelligent workflows.
-            My work combines software engineering, operational systems, APIs,
-            and AI integration with a strong emphasis on practical execution
-            and continuous learning.
+            I'm Arnaldo Rocha, a Computer Engineering student (2027) who builds backend services, automation pipelines, and AI-integrated tools under the brand nexu.fell. I deliver production systems and SaaS products for small businesses. I teach AI, automation, Python, and Power BI at Instituto Correggio. My direction: elite backend and applied AI engineering, with an eye toward postgraduate research.
           </p>
         </div>
 
@@ -42,15 +38,11 @@ export default function AboutPage() {
               <Badge>Systems</Badge>
 
               <h2 className="text-2xl font-semibold text-white">
-                Operational software and automation systems.
+                Backend systems and automation.
               </h2>
 
               <p className="leading-7 text-slate-300">
-                I develop software systems focused on automation,
-                operational efficiency, and backend reliability.
-                My projects include management platforms,
-                workflow automation, integrations with external APIs,
-                and AI-assisted tools.
+                I create backend services that automate routine work, connect APIs, and keep data flowing. My work is built around reliability, clear logic, and practical operations.
               </p>
             </motion.div>
 
@@ -65,16 +57,11 @@ export default function AboutPage() {
               <Badge>AI engineering</Badge>
 
               <h2 className="text-2xl font-semibold text-white">
-                AI workflows and intelligent integrations.
+                Applied AI and model workflows.
               </h2>
 
               <p className="leading-7 text-slate-300">
-                I'm exploring agentic workflows, LLM integrations,
-                and intelligent automation systems using Python
-                and modern AI APIs.
-                My current focus is building practical AI applications
-                that combine orchestration, usability,
-                and scalable backend logic.
+                I explore AI integrations through practical applications, using model APIs to support automation and decision processes without overcomplicating the system.
               </p>
             </motion.div>
 
@@ -89,14 +76,11 @@ export default function AboutPage() {
               <Badge>Engineering</Badge>
 
               <h2 className="text-2xl font-semibold text-white">
-                Backend architecture and continuous learning.
+                Engineering practice
               </h2>
 
               <p className="leading-7 text-slate-300">
-                I continuously study backend engineering,
-                data systems, APIs, infrastructure fundamentals,
-                and production-oriented software development while
-                applying these concepts in real-world projects.
+                I apply software engineering principles in code, testing, and deployment with an emphasis on maintainability and operational correctness.
               </p>
             </motion.div>
           </div>
@@ -105,22 +89,22 @@ export default function AboutPage() {
           <div className="space-y-6 rounded-[2rem] border border-white/10 bg-surface2 p-8 shadow-soft">
             <div className="space-y-4">
               <p className="text-xs uppercase tracking-[0.28em] text-slate-500">
-                Professional focus
+                Focus areas
               </p>
 
               <h2 className="text-2xl font-semibold text-white">
-                Domain expertise
+                Core strengths
               </h2>
             </div>
 
             <div className="grid gap-4">
               {[
                 'Backend development',
-                'Python automation',
-                'AI integrations',
+                'Python and FastAPI',
+                'Automation workflows',
                 'REST APIs',
-                'Workflow systems',
-                'Teaching & mentorship'
+                'AI integration',
+                'Systems learning'
               ].map((item) => (
                 <div
                   key={item}
@@ -138,11 +122,7 @@ export default function AboutPage() {
               </p>
 
               <p className="mt-3 leading-7 text-slate-300">
-                I believe software should simplify operations,
-                reduce repetitive work, and create reliable workflows.
-                My goal is to build systems that are practical,
-                maintainable, and continuously improved through
-                iteration and experimentation.
+                I believe software should reduce repetitive work, keep systems easy to maintain, and make operations more dependable. I focus on practical engineering, solid foundations, and continuous improvement.
               </p>
             </div>
           </div>
@@ -150,62 +130,56 @@ export default function AboutPage() {
 
         {/* EXPERIENCE */}
         <div className="mt-14 rounded-[2rem] border border-white/10 bg-surface2 p-8 shadow-soft">
-        <p className="text-xs uppercase tracking-[0.28em] text-slate-500">
+          <p className="text-xs uppercase tracking-[0.28em] text-slate-500">
             Experience
-        </p>
+          </p>
 
-        <div className="mt-6 space-y-8">
+          <div className="mt-6 space-y-8">
             <div>
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-xl font-semibold text-white">
                     Career Advisor & Professor
-                </h3>
+                  </h3>
 
-                <p className="text-sm text-slate-400">
+                  <p className="text-sm text-slate-400">
                     Instituto Correggio
-                </p>
+                  </p>
                 </div>
 
                 <p className="text-sm text-slate-500">
-                Aug 2025 — Present
+                  Aug 2025 — Present
                 </p>
-            </div>
+              </div>
 
-            <p className="mt-4 leading-7 text-slate-300">
-                Work with students across multiple disciplines through mentoring,
-                academic guidance, classroom support, and structured learning assistance.
-                This role strengthened my communication, teaching, leadership,
-                and problem-solving skills while improving my ability to explain
-                complex concepts clearly and systematically.
-            </p>
+              <p className="mt-4 leading-7 text-slate-300">
+                I support students through mentoring, academic guidance, and structured learning. This work sharpened my ability to explain technical ideas clearly and support development with real systems thinking.
+              </p>
 
-            <p className="mt-4 leading-7 text-slate-300">
-                Alongside education and mentorship activities, I continuously develop
-                software engineering and AI projects focused on automation,
-                backend systems, workflow orchestration, and intelligent applications.
-            </p>
+              <p className="mt-4 leading-7 text-slate-300">
+                Alongside mentoring, I build practical software projects focused on backend systems, automation, and AI workflows.
+              </p>
             </div>
+          </div>
         </div>
-        </div> 
 
-      {/* EXTRA CARDS */}
+        {/* EXTRA CARDS */}
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
           {[
             {
               title: 'Teaching and mentoring',
               detail:
-                'Support students through structured guidance and clear communication while continuously improving leadership and problem-solving skills.'
+                'Support students with clear guidance while improving leadership and problem-solving skills.'
             },
             {
               title: 'Experimentation',
               detail:
-                'Rapidly prototype automation systems, AI integrations, and backend workflows with a strong focus on practical learning and iteration.'
+                'Prototype automation systems, AI integrations, and backend workflows with a strong focus on learning and iteration.'
             },
             {
-              title: 'Production mindset',
+              title: 'Engineering mindset',
               detail:
-                'Develop projects with maintainability, reliability, scalability, and long-term engineering growth in mind.'
+                'Build projects with maintainability, reliability, and long-term technical growth in mind.'
             }
           ].map((item) => (
             <motion.div
@@ -236,7 +210,7 @@ export default function AboutPage() {
               </p>
 
               <h2 className="mt-3 text-3xl font-semibold text-white">
-                Ready to build automation systems and AI-powered products.
+                Ready to build reliable tools and automation.
               </h2>
             </div>
 

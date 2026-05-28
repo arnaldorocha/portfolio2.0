@@ -14,7 +14,15 @@ type MediaGalleryProps = {
 
 export function MediaGallery({ items }: MediaGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const activeMedia = items[activeIndex];
+  const activeMedia = items.length > 0 ? items[Math.min(activeIndex, items.length - 1)] : null;
+
+  if (!activeMedia) {
+    return (
+      <div className="rounded-[2rem] border border-white/10 bg-surface2 p-8 text-slate-400">
+        <p className="text-sm">No media available for this project.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">
@@ -28,10 +36,18 @@ export function MediaGallery({ items }: MediaGalleryProps) {
               height={800}
               className="h-[420px] w-full rounded-[1.5rem] object-cover"
             />
+          ) : activeMedia.type === 'mp4' ? (
+            <video controls className="h-[420px] w-full rounded-[1.5rem] bg-black">
+              <source src={activeMedia.src} type="video/mp4" />
+              <p className="p-6 text-center text-sm text-slate-400">Your browser does not support video playback.</p>
+            </video>
           ) : (
-            <div className="flex h-[420px] items-center justify-center rounded-[1.5rem] bg-slate-950/70 text-slate-400">
-              <p className="text-sm">{activeMedia.label}</p>
-            </div>
+            <iframe
+              src={activeMedia.src}
+              title={activeMedia.label}
+              className="h-[420px] w-full rounded-[1.5rem] border border-white/10"
+              allowFullScreen
+            />
           )}
         </div>
         <div className="space-y-4 rounded-[2rem] border border-white/10 bg-surface2 p-6 shadow-soft">
