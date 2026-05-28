@@ -119,6 +119,12 @@ export const projects: ProjectData[] = [
         src: '/project-screenshots/corregio.png',
         label: 'Authentication and tenant management console'
       },
+      
+      {
+        type: 'image',
+        src: '/project-screenshots/SigaCorregioDashboard.png',
+        label: 'Authentication and tenant management console'
+      },
       {
         type: 'mp4',
         src: '/videos/demosigas.mp4',
@@ -165,12 +171,23 @@ export const projects: ProjectData[] = [
       metrics: ['Campaign aggregation', 'AI summaries', 'Pilot SaaS flow']
     },
     media: [
-      {
-        type: 'image',
-        src: '/project-screenshots/AdPulse.png',
-        label: 'AdPulse campaign orchestration overview'
-      }
-    ],
+  {
+    type: 'image',
+    src: '/project-screenshots/AdPulse.png',
+    label: 'AdPulse dashboard overview'
+  },
+  {
+    type: 'image',
+    src: '/project-screenshots/adpulsedata.png',
+    label: 'Campaign analytics data view'
+  },
+  {
+    type: 'image',
+    src: '/project-screenshots/adcampanhas.png',
+    label: 'Campaign analytics data view'
+  }
+  
+],
     diagram: 'Pipeline for ingesting campaign data, running analytics, and surfacing recommendations.'
   },
   {
@@ -298,7 +315,12 @@ export const projects: ProjectData[] = [
       outcome: 'Helps teams monitor progress against configurable targets.',
       metrics: ['Configurable targets', 'Progress tracking']
     },
-    media: [],
+    media: [  {
+    type: 'mp4',
+    src: '/videos/demofinanceiro.mp4',
+    label: 'AdPulse walkthrough'
+  }
+],
     diagram: 'Goal tracking, data ingestion, and reporting.'
   },
   {
