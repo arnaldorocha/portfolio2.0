@@ -30,7 +30,7 @@ export function HeroSection() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500" />
             </span>
-            Backend developer • Automation engineer • Applied AI
+            Computer Engineer • Backend developer • Automation • Applied AI
           </motion.div>
 
           {/* Main Headline */}
@@ -39,9 +39,9 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl"
+              className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl"
             >
-              Arnaldo Rocha — Backend, Automation, Applied AI
+              Arnaldo Rocha Filho
             </motion.h1>
 
             <motion.p
@@ -50,7 +50,7 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl"
             >
-              Founder of nexu.fell. I build backend services, automation pipelines, and model-integrated systems using Python, FastAPI, and PostgreSQL. I ship production-ready automation and SaaS tools for small businesses.
+              I build backend services, automation pipelines, and model-integrated systems using Python, FastAPI, and PostgreSQL. I ship production-ready automation and SaaS tools for small businesses.
             </motion.p>
           </div>
 
@@ -85,7 +85,7 @@ export function HeroSection() {
           >
             <div className="space-y-1">
               <p className="text-xs uppercase tracking-wider text-slate-500">Brand</p>
-              <p className="text-lg font-semibold text-white">nexu.fell — automation & SaaS</p>
+              <p className="text-lg font-semibold text-white">Automation & SaaS</p>
             </div>
 
             <div className="space-y-1">

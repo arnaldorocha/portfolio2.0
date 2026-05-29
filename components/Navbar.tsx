@@ -18,10 +18,10 @@ export function Navbar() {
         >
           <div className="relative h-8 w-8 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 p-1.5">
             <div className="h-full w-full rounded bg-surface flex items-center justify-center text-xs font-bold text-blue-400">
-              AR
+              ARF
             </div>
           </div>
-          <span className="hidden sm:inline">ARNALDO ROCHA</span>
+          <span className="hidden sm:inline">PORTFOLIO • LABS</span>
         </Link>
 
         {/* Navigation */}

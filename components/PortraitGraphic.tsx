@@ -26,36 +26,13 @@ export function PortraitGraphic() {
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
           <Image
-            src="https://raw.githubusercontent.com/arnaldorocha/portfolio/refs/heads/main/assets/img/IMG_20260425_003039_467.webp"
-            alt="Arnaldo Rocha Filho"
+            src="/images/profile/perfil.png" alt="Arnaldo Rocha Filho"
             width={900}
             height={1200}
             priority
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
           />
 
-          {/* Floating badge */}
-          <div className="absolute bottom-5 left-5 z-20 rounded-full border border-white/10 bg-black/40 px-4 py-2 backdrop-blur-md">
-            <p className="text-[11px] uppercase tracking-[0.24em] text-slate-300">
-              Backend Engineer · AI Systems
-            </p>
-          </div>
-        </div>
-
-        {/* TEXT */}
-        <div className="space-y-3 px-1">
-          <p className="text-xs uppercase tracking-[0.32em] text-slate-500">
-            Engineering Portrait
-          </p>
-
-          <h3 className="text-2xl font-semibold tracking-tight text-white">
-            Building dependable infrastructure and production-ready systems.
-          </h3>
-
-          <p className="max-w-xl text-[15px] leading-8 text-slate-400">
-            Focused on backend engineering, AI orchestration, workflow automation,
-            operational systems, APIs, and scalable software architecture.
-          </p>
         </div>
       </div>
     </motion.div>

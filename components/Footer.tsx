@@ -33,10 +33,10 @@ export function Footer() {
             <div className="flex items-center gap-2">
               <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 p-1.5">
                 <div className="h-full w-full rounded bg-surface flex items-center justify-center text-xs font-bold text-blue-400">
-                  AR
+                  ARF
                 </div>
               </div>
-              <span className="font-semibold text-white">Arnaldo Rocha</span>
+              <span className="font-semibold text-white">Arnaldo Rocha Filho</span>
             </div>
             <p className="text-sm leading-relaxed text-slate-400">
               Backend developer. Automation engineer. Applied AI.

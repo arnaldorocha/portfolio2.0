@@ -15,11 +15,11 @@ export default function AboutPage() {
           </p>
 
           <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            Arnaldo Rocha — Backend developer, automation engineer, applied AI
+            Computer Engineer — Backend developer, automation engineer, applied AI
           </h1>
 
           <p className="max-w-3xl text-lg leading-8 text-slate-300">
-            I'm Arnaldo Rocha, a Computer Engineering student (2027) who builds backend services, automation pipelines, and AI-integrated tools under the brand nexu.fell. I deliver production systems and SaaS products for small businesses. I teach AI, automation, Python, and Power BI at Instituto Correggio. My direction: elite backend and applied AI engineering, with an eye toward postgraduate research.
+            I'm Arnaldo Rocha Filho, a Computer Engineering student who builds backend services, automation pipelines, and AI-integrated tools. I deliver production systems and SaaS products for small businesses. I teach AI, automation, Python, and Power BI at Instituto Correggio. My direction: elite backend and applied AI engineering, with an eye toward postgraduate research.
           </p>
         </div>
 

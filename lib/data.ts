@@ -123,12 +123,12 @@ export const projects: ProjectData[] = [
       {
         type: 'image',
         src: '/project-screenshots/SigaCorregioDashboard.png',
-        label: 'Authentication and tenant management console'
+        label: ' Basic Dashboard'
       },
       {
         type: 'mp4',
         src: '/videos/demosigas.mp4',
-        label: 'SIGA production walkthrough'
+        label: 'Demo'
       }
     ],
     diagram: 'System connecting authentication, course management, attendance, and dashboards.'
@@ -179,13 +179,18 @@ export const projects: ProjectData[] = [
   {
     type: 'image',
     src: '/project-screenshots/adpulsedata.png',
-    label: 'Campaign analytics data view'
+    label: 'Data view'
   },
   {
     type: 'image',
     src: '/project-screenshots/adcampanhas.png',
-    label: 'Campaign analytics data view'
-  }
+    label: 'Campaign analytics'
+  },
+      {
+        type: 'mp4',
+        src: '/videos/demoadpulse.mp4',
+        label: 'Demo'
+      }
   
 ],
     diagram: 'Pipeline for ingesting campaign data, running analytics, and surfacing recommendations.'
@@ -290,7 +295,13 @@ export const projects: ProjectData[] = [
       outcome: 'Simplifies bookings and staff coordination.',
       metrics: ['Booking management', 'Notifications', 'Staff scheduling']
     },
-    media: [],
+    
+    media: [  {
+    type: 'mp4',
+    src: '/videos/bookingsalon.mp4',
+    label: 'Demo'
+  },
+],
     diagram: 'Booking flow, notifications, and staff calendar.'
   },
   {
@@ -318,7 +329,7 @@ export const projects: ProjectData[] = [
     media: [  {
     type: 'mp4',
     src: '/videos/demofinanceiro.mp4',
-    label: 'AdPulse walkthrough'
+    label: 'Demo'
   }
 ],
     diagram: 'Goal tracking, data ingestion, and reporting.'
@@ -476,7 +487,7 @@ export const processSteps: ProcessStep[] = [
 export const roadmap: RoadmapItem[] = [
   {
     quarter: 'Q1',
-    year: 2024,
+    year: 2025,
     title: 'Local business workflow tools',
     description: 'Built management and booking tools for small businesses with backend APIs and workflow automation.',
     status: 'completed',
@@ -484,7 +495,7 @@ export const roadmap: RoadmapItem[] = [
   },
   {
     quarter: 'Q2',
-    year: 2024,
+    year: 2025,
     title: 'Campaign automation prototype',
     description: 'Delivered a campaign automation system that connects data, rules, and reporting in one place.',
     status: 'completed',
@@ -492,7 +503,7 @@ export const roadmap: RoadmapItem[] = [
   },
   {
     quarter: 'Q3',
-    year: 2024,
+    year: 2026,
     title: 'AI workflow experiments',
     description: 'Built assistant workflows and model integrations to make automation more context-aware.',
     status: 'in-progress',
@@ -500,7 +511,7 @@ export const roadmap: RoadmapItem[] = [
   },
   {
     quarter: 'Q4',
-    year: 2024,
+    year: 2026,
     title: 'WhatsApp automation',
     description: 'Created a messaging workflow tool to automate common customer conversations and routing.',
     status: 'in-progress',
@@ -516,7 +527,7 @@ export const roadmap: RoadmapItem[] = [
   },
   {
     quarter: 'Q2',
-    year: 2025,
+    year: 2026,
     title: 'AI integration maturity',
     description: 'Focus on safer model usage, clearer logging, and simpler automation patterns.',
     status: 'planned',
