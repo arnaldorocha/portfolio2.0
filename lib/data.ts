@@ -62,7 +62,7 @@ export type RoadmapItem = {
   title: string;
   description: string;
   status: 'completed' | 'in-progress' | 'planned';
-  category: 'ai' | 'saas' | 'research' | 'automation';
+  category: 'ai' | 'saas' | 'research' | 'automation' | 'business';
 };
 
 export type TechCategory = {
