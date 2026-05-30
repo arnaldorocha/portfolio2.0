@@ -12,6 +12,17 @@ export function HeroSection() {
       <div className="absolute -left-40 bottom-40 h-80 w-80 rounded-full bg-purple-500/10 blur-3xl" />
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+        
+        {/* RIGHT SIDE - Visual Element */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9, x: 40 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.9, delay: 0.2, ease: 'easeOut' }}
+          className="relative h-full min-h-[500px] lg:min-h-[600px]"
+        >
+          <PortraitGraphic />
+        </motion.div>
+        
         {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -30,7 +41,7 @@ export function HeroSection() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500" />
             </span>
-            Computer Engineer • Backend developer • Automation • Applied AI
+             Backend developer • Automation • Applied AI
           </motion.div>
 
           {/* Main Headline */}
@@ -41,7 +52,7 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl"
             >
-              Arnaldo Rocha Filho
+            Building dependable infrastructure and production-ready systems.
             </motion.h1>
 
             <motion.p
@@ -100,15 +111,7 @@ export function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* RIGHT SIDE - Visual Element */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9, x: 40 }}
-          animate={{ opacity: 1, scale: 1, x: 0 }}
-          transition={{ duration: 0.9, delay: 0.2, ease: 'easeOut' }}
-          className="relative h-full min-h-[500px] lg:min-h-[600px]"
-        >
-          <PortraitGraphic />
-        </motion.div>
+        
       </div>
     </section>
   );
