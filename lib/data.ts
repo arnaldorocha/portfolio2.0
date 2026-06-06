@@ -335,8 +335,8 @@ export const projects: ProjectData[] = [
     diagram: 'Goal tracking, data ingestion, and reporting.'
   },
   {
-    slug: 'jarvis',
-    title: 'Jarvis — Personal AI Assistant Roadmap',
+    slug: 'Zac',
+    title: 'Zac — Personal AI Assistant Roadmap',
     subtitle: 'Public roadmap for building a personal AI assistant (Public)',
     overview:
       'Public roadmap documenting how to build a personal AI assistant using automation, APIs, AI models, and integrated systems. Intended as an open engineering reference.',
@@ -350,7 +350,7 @@ export const projects: ProjectData[] = [
     stack: ['Python', 'APIs', 'Automation patterns'],
     infrastructure: ['Prototype runtimes, task queues, and connectors'],
     roadmap: ['Publish stage guides', 'Add reproducible examples and recipes', 'Collect community feedback'],
-    links: { github: 'https://github.com/arnaldorocha/jarvis', demo: '' },
+    links: { github: 'https://github.com/arnaldorocha/zac', demo: '' },
     hero: {
       summary: 'A public engineering roadmap for building a personal AI assistant.',
       outcome: 'A reference that documents practical engineering decisions and trade-offs.',
@@ -363,12 +363,12 @@ export const projects: ProjectData[] = [
 
 // Mark featured projects for homepage
 projects.forEach((project) => {
-  if (['siga', 'adpulse', 'jarvis'].includes(project.slug)) {
+  if (['siga', 'adpulse', 'zac'].includes(project.slug)) {
     project.featured = true;
   }
 
   // Categorize projects
-  if (project.slug === 'jarvis') {
+  if (project.slug === 'zac') {
     project.category = 'ai';
   } else if (['adpulse', 'siga'].includes(project.slug)) {
     project.category = 'saas';
